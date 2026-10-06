@@ -9,4 +9,7 @@ Vagrant.configure("2") do |config|
     config.vm.provision "install_DHCP_server",
         type: "shell",
         path: "scripts/01_install_DHCP_server.sh"
+    config.vm.provision "configure_DHCP_server",
+        type: "shell",
+        path: "scripts/02_configure_DHCP_server.sh"
 end

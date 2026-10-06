@@ -25,7 +25,9 @@ end
     config.vm.define "printer" do |printer|
     printer.vm.box = "debian/bookworm64"
     printer.vm.network "private_network",
-    :mac => "tbd"
+    mac: "0800278dc04d",
     type: "dhcp",
     virtualbox__intnet: "intnet"
+end
+
 end
